@@ -9,6 +9,7 @@ import {
   Star,
 } from "lucide-preact";
 import styles from "./App.module.scss";
+import { Map } from "./components/Map";
 
 export function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -161,26 +162,7 @@ export function App() {
                 </div>
               </div>
             </div>
-            <div class={styles.mapPlaceholder}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.2!2d-73.6608!3d40.5886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM1JzE5LjAiTiA3M8KwMzknMzkuNyJX!5e0!3m2!1sen!2sus!4v1234567890"
-                width="100%"
-                height="300"
-                style={{ border: 0, borderRadius: "0.5rem" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="CAN Market Location"
-              ></iframe>
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=390+West+Park+Ave,+Long+Beach,+NY+11561"
-                target="_blank"
-                rel="noopener noreferrer"
-                class={styles.directionsButton}
-              >
-                Get Directions
-              </a>
-            </div>
+            <Map />
           </div>
         </div>
       </section>
