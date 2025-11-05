@@ -7,6 +7,7 @@ import {
 } from "lucide-preact";
 import styles from "./App.module.scss";
 import { ContactSection } from "./sections/ContactSection";
+import { SEOContent } from "./components/SEOContent";
 
 export function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,13 +32,7 @@ export function App() {
   return (
     <div class={styles.app}>
       {/* SEO Content */}
-      <div class={styles.seoHidden}>
-        <h1>CAN Market - Your Local Mobil Gas Station & Convenience Store</h1>
-        <p>
-          Quality fuel, fresh food, and everyday essentials at CAN Market. Visit
-          our Mobil station for gas, snacks, beverages, and more.
-        </p>
-      </div>
+      <SEOContent />
 
       {/* Header */}
       <header class={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
