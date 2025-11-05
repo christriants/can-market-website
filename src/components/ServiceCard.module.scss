@@ -1,0 +1,38 @@
+@use "../styles/_variables" as *;
+
+.serviceCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    font-weight: 600;
+    color: $gray-900;
+    margin: 0;
+  }
+}
+
+.serviceIcon {
+  width: 48px;
+  height: 48px;
+  background: $red-50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+
+  div {
+    width: 24px;
+    height: 24px;
+    background: $primary;
+    border-radius: 50%;
+  }
+}

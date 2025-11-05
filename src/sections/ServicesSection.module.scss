@@ -1,0 +1,26 @@
+@use "../styles/_variables" as *;
+
+ // @todo DUPLICATE refactor container styles into a mixin or utility class
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services {
+  padding: 4rem 1rem;
+  background: $gray-50;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: $gray-900;
+    margin-bottom: 3rem;
+  }
+}
+
+.servicesGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

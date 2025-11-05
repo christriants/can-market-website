@@ -8,6 +8,7 @@ import {
 import styles from "./App.module.scss";
 import { ContactSection } from "./sections/ContactSection";
 import { SEOContent } from "./components/SEOContent";
+import { ServicesSection } from "./sections/ServicesSection";
 
 export function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,17 +18,6 @@ export function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const services = [
-    "Premium Gasoline",
-    "Diesel Fuel",
-    "Snacks & Beverages",
-    "Fresh Food",
-    "Coffee & Tea",
-    "Lottery Tickets",
-    "ATM Services",
-    "Car Accessories",
-  ];
 
   return (
     <div class={styles.app}>
@@ -107,21 +97,7 @@ export function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" class={styles.services}>
-        <div class={styles.container}>
-          <h2>What We Offer</h2>
-          <div class={styles.servicesGrid}>
-            {services.map((service, idx) => (
-              <div key={idx} class={styles.serviceCard}>
-                <div class={styles.serviceIcon}>
-                  <div></div>
-                </div>
-                <h3>{service}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ServicesSection />
 
       {/* Contact Section */}
       <ContactSection />
