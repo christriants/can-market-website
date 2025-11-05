@@ -42,7 +42,7 @@ export function App() {
               <ShoppingBag size={24} />
             </div>
             <div>
-              <h2 class={styles.logoTitle}>CAN Market</h2>
+              <h2 class={styles.logoTitle}>C.A.N. MARKET</h2>
               <p class={styles.logoSubtitle}>Mobil Gas Station</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export function App() {
           <div class={styles.heroContent}>
             <div class={styles.badge}>NOW OPEN</div>
             <h1 class={styles.heroTitle}>
-              Welcome to <span>CAN Market</span>
+              Welcome to <span>C.A.N. MARKET</span>
             </h1>
             <p class={styles.heroSubtitle}>
               Your neighborhood Mobil station offering quality fuel, fresh
@@ -91,11 +91,11 @@ export function App() {
       {/* About Section */}
       <section id="about" class={styles.about}>
         <div class={styles.containerSmall}>
-          <h2>About CAN Market</h2>
+          <h2>About C.A.N. MARKET</h2>
           <p>
             We're proud to serve our community with quality products and
             friendly service. Whether you're filling up your tank, grabbing a
-            quick snack, or picking up essentials, CAN Market is here for you.
+            quick snack, or picking up essentials, C.A.N. MARKET is here for you.
           </p>
           <div class={styles.rating}>
             {[...Array(5)].map((_, i) => (
@@ -133,13 +133,13 @@ export function App() {
             <div class={styles.footerIcon}>
               <ShoppingBag size={18} />
             </div>
-            <span>CAN Market</span>
+            <span>C.A.N. MARKET</span>
           </div>
           <p class={styles.footerText}>
             Your Local Mobil Gas Station & Convenience Store
           </p>
           <p class={styles.footerCopyright}>
-            © 2025 CAN Market. All rights reserved.
+            © 2025 C.A.N. MARKET. All rights reserved.
           </p>
         </div>
       </footer>

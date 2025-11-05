@@ -10,7 +10,7 @@ export const Map = () => {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="CAN Market Location"
+        title="C.A.N. MARKET Location"
       ></iframe>
       <a
         href="https://www.google.com/maps/dir/?api=1&destination=390+W+Park+Ave,+Long+Beach,+NY+11561"
