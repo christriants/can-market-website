@@ -1,15 +1,12 @@
 import { useState, useEffect } from "preact/hooks";
 import {
-  MapPin,
-  Phone,
-  Clock,
   Fuel,
   ShoppingBag,
   Coffee,
   Star,
 } from "lucide-preact";
 import styles from "./App.module.scss";
-import { Map } from "./components/Map";
+import { ContactSection } from "./sections/ContactSection";
 
 export function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -132,40 +129,7 @@ export function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" class={styles.contact}>
-        <div class={styles.containerSmall}>
-          <h2>Visit Us Today</h2>
-          <div class={styles.contactGrid}>
-            <div class={styles.contactInfo}>
-              <div class={styles.contactItem}>
-                <MapPin size={24} />
-                <div>
-                  <h3>Location</h3>
-                  <p>
-                    390 W Park Ave
-                    <br />
-                    Long Beach, NY 11561
-                  </p>
-                </div>
-              </div>
-              <div class={styles.contactItem}>
-                <Phone size={24} />
-                <div>
-                  <h3>Phone</h3>
-                  <p>(516) 432-6581</p>
-                </div>
-              </div>
-              <div class={styles.contactItem}>
-                <Clock size={24} />
-                <div>
-                  <h3>Open 24 Hours</h3>
-                </div>
-              </div>
-            </div>
-            <Map />
-          </div>
-        </div>
-      </section>
+      <ContactSection />
 
       {/* Footer */}
       <footer class={styles.footer}>
