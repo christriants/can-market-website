@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks";
-import { ShoppingBag, Star } from "lucide-preact";
+import { Star } from "lucide-preact";
 import styles from "./App.module.scss";
 import { ContactSection } from "./sections/ContactSection";
 import { SEOContent } from "./components/SEOContent";
@@ -7,6 +7,7 @@ import { ServicesSection } from "./sections/ServicesSection";
 import { GallerySection } from "./sections/GallerySection";
 import { HeroSection } from "./sections/HeroSection";
 import { HeaderSection } from "./sections/HeaderSection";
+import { FooterSection } from "./sections/FooterSection";
 
 export function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -45,24 +46,7 @@ export function App() {
         </section>
 
       <ContactSection />
-
-        {/* Footer */}
-        <footer class={styles.footer}>
-          <div class={styles.container}>
-            <div class={styles.footerLogo}>
-              <div class={styles.footerIcon}>
-                <ShoppingBag size={18} />
-              </div>
-              <span>C.A.N. MARKET</span>
-            </div>
-            <p class={styles.footerText}>
-              Your Local Mobil Gas Station & Convenience Store
-            </p>
-            <p class={styles.footerCopyright}>
-              © 2025 C.A.N. MARKET. All rights reserved.
-            </p>
-          </div>
-        </footer>
+      <FooterSection />
     </div>
   );
 }
