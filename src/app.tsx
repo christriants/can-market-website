@@ -1,14 +1,10 @@
 import { useState, useEffect } from "preact/hooks";
-import {
-  Fuel,
-  ShoppingBag,
-  Coffee,
-  Star,
-} from "lucide-preact";
+import { Fuel, ShoppingBag, Coffee, Star } from "lucide-preact";
 import styles from "./App.module.scss";
 import { ContactSection } from "./sections/ContactSection";
 import { SEOContent } from "./components/SEOContent";
 import { ServicesSection } from "./sections/ServicesSection";
+import { GallerySection } from "./sections/GallerySection";
 
 export function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -78,14 +74,21 @@ export function App() {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <GallerySection />'
+      
+      {/* Services Section */}
+      <ServicesSection />'
+
       {/* About Section */}
       <section id="about" class={styles.about}>
         <div class={styles.containerSmall}>
           <h2>About C.A.N. MARKET</h2>
           <p>
-            We're proud to serve our community with quality products and
-            friendly service. Whether you're filling up your tank, grabbing a
-            quick snack, or picking up essentials, C.A.N. MARKET is here for you.
+            <strong>Proudly family-owned and operated</strong>, we're dedicated to serving our 
+            Long Beach community with quality products and friendly service. Whether you're 
+            filling up your tank, grabbing a quick snack, or picking up essentials, 
+            C.A.N. MARKET is here for you.
           </p>
           <div class={styles.rating}>
             {[...Array(5)].map((_, i) => (
@@ -95,9 +98,6 @@ export function App() {
           </div>
         </div>
       </section>
-
-      {/* Services Section */}
-      <ServicesSection />
 
       {/* Contact Section */}
       <ContactSection />
