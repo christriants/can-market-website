@@ -1,4 +1,4 @@
-@use './styles/_variables' as *;
+@use "./styles/_variables" as *;
 
 // Mixins
 @mixin card {
@@ -6,7 +6,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
-  
+
   &:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
@@ -17,7 +17,8 @@
 .app {
   min-height: 100vh;
   background: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
 }
 
 .container {
@@ -37,7 +38,7 @@
   z-index: 50;
   transition: all 0.3s ease;
   background: transparent;
-  
+
   &.scrolled {
     background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -86,64 +87,20 @@
 .nav {
   display: none;
   gap: 1.5rem;
-  
+
   a {
     color: $gray-700;
     text-decoration: none;
     transition: color 0.3s;
-    
+
     &:hover {
       color: $primary;
     }
   }
-  
+
   @media (min-width: 768px) {
     display: flex;
   }
-}
-
-// Hero Section
-.hero {
-  padding: 6rem 1rem 4rem;
-  background: linear-gradient(to bottom right, $red-50, $blue-50);
-}
-
-.heroContent {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.badge {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
-  background: $primary;
-  color: white;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-
-.heroTitle {
-  font-size: 3rem;
-  font-weight: bold;
-  color: $gray-900;
-  margin-bottom: 1rem;
-  
-  span {
-    color: $primary;
-  }
-  
-  @media (min-width: 768px) {
-    font-size: 3.75rem;
-  }
-}
-
-.heroSubtitle {
-  font-size: 1.25rem;
-  color: $gray-600;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
 // Features
@@ -151,7 +108,7 @@
   display: grid;
   gap: 1.5rem;
   margin-top: 3rem;
-  
+
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -160,19 +117,19 @@
 .featureCard {
   @include card;
   padding: 1.5rem;
-  
+
   svg {
     color: $primary;
     margin-bottom: 1rem;
   }
-  
+
   h3 {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: $gray-900;
   }
-  
+
   p {
     color: $gray-600;
     margin: 0;
@@ -184,14 +141,14 @@
   padding: 4rem 1rem;
   background: white;
   text-align: center;
-  
+
   h2 {
     font-size: 2.5rem;
     font-weight: bold;
     color: $gray-900;
     margin-bottom: 1.5rem;
   }
-  
+
   p {
     font-size: 1.125rem;
     color: $gray-600;
@@ -206,7 +163,7 @@
   align-items: center;
   gap: 0.5rem;
   color: $yellow;
-  
+
   span {
     margin-left: 0.5rem;
     color: $gray-700;
@@ -228,7 +185,7 @@
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  
+
   span {
     font-size: 1.25rem;
     font-weight: bold;

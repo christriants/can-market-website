@@ -1,0 +1,48 @@
+import { Fuel, ShoppingBag, Coffee } from "lucide-preact";
+import styles from "./HeroSection.module.scss";
+
+export const HeroSection = () => {
+    return (
+        <section class={styles.hero}>
+        <div class={styles.heroBackground}>
+          <img 
+            src="https://res.cloudinary.com/db0tdypom/image/upload/f_auto,q_auto,w_1920/IMG_6197_s8iqtp" 
+            alt="C.A.N. Market at night"
+            class={styles.heroImage}
+          />
+          <div class={styles.heroOverlay}></div>
+        </div>
+        
+          <div class={styles.container}>
+            <div class={styles.heroContent}>
+              <div class={styles.badge}>NOW OPEN</div>
+              <h1 class={styles.heroTitle}>
+                Welcome to <span>C.A.N. MARKET</span>
+              </h1>
+              <p class={styles.heroSubtitle}>
+                Your neighborhood family-owned Mobil station offering quality fuel, fresh
+                snacks, and everything you need on the go.
+              </p>
+            </div>
+
+            <div class={styles.features}>
+              <div class={styles.featureCard}>
+                <Fuel size={40} />
+                <h3>Premium Fuel</h3>
+                <p>Top-quality Mobil gasoline and diesel at competitive prices</p>
+              </div>
+              <div class={styles.featureCard}>
+                <ShoppingBag size={40} />
+                <h3>Convenience Store</h3>
+                <p>Fresh food, snacks, drinks, and everyday essentials</p>
+              </div>
+              <div class={styles.featureCard}>
+                <Coffee size={40} />
+                <h3>Fresh Coffee</h3>
+                <p>Hot coffee and refreshments available all day</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    )
+}
