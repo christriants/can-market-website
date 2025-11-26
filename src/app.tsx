@@ -6,6 +6,7 @@ import { SEOContent } from "./components/SEOContent";
 import { ServicesSection } from "./sections/ServicesSection";
 import { GallerySection } from "./sections/GallerySection";
 import { HeroSection } from "./sections/HeroSection";
+import { HeaderSection } from "./sections/HeaderSection";
 
 export function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -18,37 +19,11 @@ export function App() {
 
   return (
     <div class={styles.app}>
-      {/* SEO Content */}
       <SEOContent />
-
-      {/* Header */}
-      <header class={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-        <div class={styles.headerContent}>
-          <div class={styles.logo}>
-            <div class={styles.logoIcon}>
-              <ShoppingBag size={24} />
-            </div>
-            <div>
-              <h2 class={styles.logoTitle}>C.A.N. MARKET</h2>
-              <p class={styles.logoSubtitle}>Mobil Gas Station</p>
-            </div>
-          </div>
-          <nav class={styles.nav}>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-        {/* Hero Section */}
-        <HeroSection />
-
-        {/* Gallery Section */}
-        <GallerySection />
-        
-        {/* Services Section */}
-        <ServicesSection />
+      <HeaderSection scrolled={scrolled} />
+      <HeroSection />
+      <GallerySection />
+      <ServicesSection />
 
         {/* About Section */}
         <section id="about" class={styles.about}>
@@ -69,8 +44,7 @@ export function App() {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <ContactSection />
+      <ContactSection />
 
         {/* Footer */}
         <footer class={styles.footer}>

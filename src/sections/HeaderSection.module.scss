@@ -1,0 +1,84 @@
+@use "../styles/variables" as *;
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.3s ease;
+  background: transparent;
+
+  &.scrolled {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background: $primary;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logoTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $white;
+  margin: 0;
+
+    &.scrolled {
+        color: $gray-900;
+    }
+}
+
+.logoSubtitle {
+  font-size: 0.75rem;
+  color: $gray-100;
+  margin: 0;
+
+  &.scrolled {
+    color: $gray-600;
+  }
+}
+
+.nav {
+  display: none;
+  gap: 1.5rem;
+
+  a {
+    color: $gray-100;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &.scrolled {
+        color: $gray-900;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
