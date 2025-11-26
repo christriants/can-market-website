@@ -1,0 +1,36 @@
+
+@use "../styles/_variables" as *;
+
+.about {
+  padding: 4rem 1rem;
+  background: white;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $gray-900;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: $gray-600;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: $yellow;
+
+  span {
+    margin-left: 0.5rem;
+    color: $gray-700;
+    font-weight: 600;
+  }
+}
