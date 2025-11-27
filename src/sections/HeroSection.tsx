@@ -15,7 +15,10 @@ export const HeroSection = () => {
         
           <div class={styles.container}>
             <div class={styles.heroContent}>
-              <div class={styles.badge}>NOW OPEN</div>
+              <div class={styles.neonSign}>
+                <span class={styles.neonText}>OPEN</span>
+                <span class={styles.neonSubtext}>24/7</span>
+              </div>
               <h1 class={styles.heroTitle}>
                 Welcome to <span>C.A.N. MARKET</span>
               </h1>
