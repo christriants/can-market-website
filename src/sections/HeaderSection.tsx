@@ -16,8 +16,8 @@ export const HeaderSection = ({ scrolled }: HeaderSectionProps) => {
               <ShoppingBag size={24} />
             </div>
             <div>
-              <h2 class={`${styles.logoTitle} ${scrolledClassName}`}>C.A.N. MARKET</h2>
-              <p class={`${styles.logoSubtitle} ${scrolledClassName}`}>Mobil Gas Station</p>
+              <h2 class={styles.logoTitle}>C.A.N. MARKET</h2>
+              <p class={styles.logoSubtitle}>Mobil Gas Station</p>
             </div>
           </div>
           <nav class={styles.nav}>
