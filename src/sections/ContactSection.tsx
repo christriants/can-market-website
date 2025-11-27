@@ -34,7 +34,7 @@ export const ContactSection = () => {
                 <Phone size={24} />
                 <div>
                   <h3>{strings.phoneTitle}</h3>
-                  <p>{strings.phoneNumber}</p>
+                  <a href={`tel:${strings.phoneNumber}`}>{strings.phoneNumber}</a>
                 </div>
               </div>
               <div class={styles.contactItem}>
