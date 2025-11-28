@@ -1,4 +1,4 @@
-import { Fuel, ShoppingBag, Coffee } from "lucide-preact";
+import { ShoppingBag, Coffee, Beer } from "lucide-preact";
 import styles from "./HeroSection.module.scss";
 
 export const HeroSection = () => {
@@ -6,7 +6,7 @@ export const HeroSection = () => {
         <section class={styles.hero}>
         <div class={styles.heroBackground}>
           <img 
-            src="https://res.cloudinary.com/db0tdypom/image/upload/f_auto,q_auto,w_1920/IMG_6197_s8iqtp" 
+            src="https://res.cloudinary.com/db0tdypom/image/upload/f_auto,q_auto,w_1920/screenshot_2025-11-28_at_9.53.45_AM_pw84l6.png" 
             alt="C.A.N. Market at night"
             class={styles.heroImage}
           />
@@ -23,21 +23,21 @@ export const HeroSection = () => {
                 Welcome to <span>C.A.N. MARKET</span>
               </h1>
               <p class={styles.heroSubtitle}>
-                Your neighborhood family-owned Mobil station offering quality fuel, fresh
-                snacks, and everything you need on the go.
+                Your neighborhood family-owned convenience store offering fresh
+                food, cold beer, hot coffee, and everything you need on the go.
               </p>
             </div>
 
             <div class={styles.features}>
               <div class={styles.featureCard}>
-                <Fuel size={40} />
-                <h3>Premium Fuel</h3>
-                <p>Top-quality Mobil gasoline and diesel at competitive prices</p>
+                <ShoppingBag size={40} />
+                <h3>Fresh Food & Snacks</h3>
+                <p>Hot food, fresh sandwiches, and all your favorite snacks</p>
               </div>
               <div class={styles.featureCard}>
-                <ShoppingBag size={40} />
-                <h3>Convenience Store</h3>
-                <p>Fresh food, snacks, drinks, and everyday essentials</p>
+                <Beer size={40} />
+                <h3>Cold Beer & Drinks</h3>
+                <p>Wide selection of beer and cold beverages</p>
               </div>
               <div class={styles.featureCard}>
                 <Coffee size={40} />

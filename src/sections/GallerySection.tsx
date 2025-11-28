@@ -6,9 +6,9 @@ const CLOUDINARY_BASE =
 
 const storeImages = [
   {
-    src: `${CLOUDINARY_BASE}/IMG_6197_s8iqtp`,
-    alt: "Mobil Gas Pumps at C.A.N. Market",
-    caption: "Premium Fuel",
+    src: `${CLOUDINARY_BASE}/Attachment_2_zhs1el.jpg`,
+    alt: "C.A.N. Market",
+    caption: "Welcome to C.A.N. Market",
   },
   {
     src: `${CLOUDINARY_BASE}/v1764193014/can_market_front_cmhwtw`,

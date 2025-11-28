@@ -2,14 +2,16 @@ import { ServiceCard } from "../components/ServiceCard";
 import styles from "./ServicesSection.module.scss";
 
 const services = [
-  "Premium Gasoline",
-  "Diesel Fuel",
-  "Snacks & Beverages",
-  "Fresh Food",
+  "Fresh Food & Snacks",
+  "Cold Beer & Drinks",
   "Coffee & Tea",
+  "Hot Food",
+  "Household Essentials",
+  "Clean Bathrooms",
   "Lottery Tickets",
   "ATM Services",
-  "Car Accessories",
+  "Premium Gasoline",
+  "Diesel Fuel",
 ];
 
 export const ServicesSection = () => {
