@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://christriants.github.io/can-market-website/sitemap.xml
