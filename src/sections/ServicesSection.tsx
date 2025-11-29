@@ -6,12 +6,12 @@ const services = [
   "Cold Beer & Drinks",
   "Coffee & Tea",
   "Hot Food",
+  "Free Air",
   "Household Essentials",
   "Clean Bathrooms",
   "Lottery Tickets",
   "ATM Services",
   "Premium Gasoline",
-  "Diesel Fuel",
 ];
 
 export const ServicesSection = () => {
