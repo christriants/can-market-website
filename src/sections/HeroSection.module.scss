@@ -158,8 +158,8 @@
   background: rgba(0, 0, 0, 0.3);
   border: 2px solid $primary;
   border-radius: 0.5rem;
-  box-shadow: 
-    0 0 10px rgba(220, 38, 38, 0.3),
+  box-shadow:
+    0 0 10px rgba($primary, 0.3),
     0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -168,7 +168,7 @@
   font-weight: 900;
   color: $primary;
   text-transform: uppercase;
-  filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6));
+  filter: drop-shadow(0 0 8px rgba($primary, 0.6)); 
 }
 
 .neonSubtext {
@@ -176,5 +176,5 @@
   font-weight: 600;
   color: $white;
   margin-top: 0.25rem;
-  filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6));
+  filter: drop-shadow(0 0 8px rgba($primary, 0.6)); 
 }
