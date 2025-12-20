@@ -1,4 +1,3 @@
-import { ShoppingBag } from "lucide-preact";
 import styles from "./HeaderSection.module.scss";
 
 interface HeaderSectionProps {
@@ -11,15 +10,13 @@ export const HeaderSection = ({ scrolled }: HeaderSectionProps) => {
     return (
         <header class={`${styles.header} ${scrolledClassName}`}>
         <div class={styles.headerContent}>
-          <div class={styles.logo}>
-            <div class={styles.logoIcon}>
-              <ShoppingBag size={24} />
-            </div>
-            <div>
-              <h2 class={styles.logoTitle}>C.A.N. MARKET</h2>
-              <p class={styles.logoSubtitle}>Mobil Gas Station</p>
-            </div>
-          </div>
+          <a href="#" class={styles.logo}>
+            <img
+              src="logo.png"
+              alt="C.A.N. MARKET"
+              class={styles.logoImage}
+            />
+          </a>
           <nav class={styles.nav}>
             <a href="#about">About</a>
             <a href="#services">Services</a>
